@@ -9,6 +9,33 @@
 
 ## こちらのファイル群はLaravelでの動作を前提として記述しております。
 
+下記の環境で動作をチェックしています。
+
+php version
+PHP 7.4.33 (cli) (built: Nov 19 2022 00:22:13) ( NTS )
+Copyright (c) The PHP Group
+Zend Engine v3.4.0, Copyright (c) Zend Technologies
+
+mariadb version
+MariaDB 10.5 database server
+
+データベース設定
+CREATE DATABASE todolist CHARACTER SET utf8mb4;
+CREATE USER 'todouser'@'localhost' IDENTIFIED BY '任意のパス';(注意データベースのユーザのパスワードです。)
+
+.envファイルの
+DB_DATABASE=todolist
+DB_USERNAME=todouser
+DB_PASSWORD=任意のパス　（注意　DB初期設定時の任意のパスワードです。）
+
+また、todouserには全権限を付与してください。
+GRANT all ON todolist.* TO 'todouser'@'localhost';
+
+
+以上の設定が終わりましたら、コンソールにてマイグレーションを実行すれば動作します。
+php artisan migrate
+
+
 <p>・Laravelのenvironmentファイルがある場所に、任意のディレクトリを作り、そこにこのファイル群をおいて、起動してください。（作者はtodolistディレクトリで起動）</p>
 
 <p>・ユーザー登録機能</p>
