@@ -9,31 +9,31 @@
 
 ## こちらのファイル群はLaravelでの動作を前提として記述しております。
 
-下記の環境で動作をチェックしています。
+<p>下記の環境で動作をチェックしています。
 
-php version
-PHP 7.4.33 (cli) (built: Nov 19 2022 00:22:13) ( NTS )
-Copyright (c) The PHP Group
-Zend Engine v3.4.0, Copyright (c) Zend Technologies
+<p>php version</p>
+<p>PHP 7.4.33 (cli) (built: Nov 19 2022 00:22:13) ( NTS )</p>
+<p>Copyright (c) The PHP Group</p>
+<p>Zend Engine v3.4.0, Copyright (c) Zend Technologies</p>
 
-mariadb version
-MariaDB 10.5 database server
+<p>mariadb version</p>
+<p>MariaDB 10.5 database server</p>
 
-データベース設定
-CREATE DATABASE todolist CHARACTER SET utf8mb4;
-CREATE USER 'todouser'@'localhost' IDENTIFIED BY '任意のパス';(注意データベースのユーザのパスワードです。)
+<p>データベース設定</p>
+<p>CREATE DATABASE todolist CHARACTER SET utf8mb4;</p>
+<p>CREATE USER 'todouser'@'localhost' IDENTIFIED BY '任意のパス';(注意データベースのユーザのパスワードです。)</p>
 
-.envファイルの
-DB_DATABASE=todolist
-DB_USERNAME=todouser
-DB_PASSWORD=任意のパス　（注意　DB初期設定時の任意のパスワードです。）
+<p>.envファイルの</p>
+<p>DB_DATABASE=todolist</p>
+<p>DB_USERNAME=todouser</p>
+<p>DB_PASSWORD=任意のパス　（注意　DB初期設定時の任意のパスワードです。）</p>
 
-また、todouserには全権限を付与してください。
-GRANT all ON todolist.* TO 'todouser'@'localhost';
+<p>また、todouserには全権限を付与してください。</p>
+<p>GRANT all ON todolist.* TO 'todouser'@'localhost';</p>
 
 
-以上の設定が終わりましたら、コンソールにてマイグレーションを実行すれば動作します。
-php artisan migrate
+<p>以上の設定が終わりましたら、コンソールにてマイグレーションを実行すれば動作します。</p>
+<p>php artisan migrate</p>
 
 
 <p>・Laravelのenvironmentファイルがある場所に、任意のディレクトリを作り、そこにこのファイル群をおいて、起動してください。（作者はtodolistディレクトリで起動）</p>
