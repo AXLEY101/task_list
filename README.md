@@ -21,7 +21,7 @@
 
 <p>データベース設定</p>
 <p>CREATE DATABASE todolist CHARACTER SET utf8mb4;</p>
-<p>CREATE USER 'todouser'@'localhost' IDENTIFIED BY '任意のパス';(注意データベースのユーザのパスワードです。)</p>
+<p>CREATE USER 'todouser'@'localhost' IDENTIFIED BY '任意のパス';  (注意データベースのユーザのパスワードです。)</p>
 
 <p>.envファイルの</p>
 <p>DB_DATABASE=todolist</p>
@@ -36,7 +36,9 @@
 <p>php artisan migrate</p>
 
 
-<p>・Laravelのenvironmentファイルがある場所に、任意のディレクトリを作り、そこにこのファイル群をおいて、起動してください。（作者はtodolistディレクトリで起動）</p>
+<p>・Laravelのcomposerを使って</p>
+<p> composer create-project laravel/laravel ./todolist --prefer-dist</p>
+<p>をコンソールに入力し、展開してください。　出来上がったtodolistにファイル群を上書きで保存して、起動してください。　（cdでホームディレクトリに移動してから作業するとenvironmentディレクトリと同じ階層に出来上がります）</p>
 
 <p>・ユーザー登録機能</p>
 <p>・ログイン機能</p>
