@@ -11,6 +11,12 @@
 
 <p>下記の環境で動作をチェックしています。
 
+<p>・Laravelのcomposerを使ってインストール</p>
+<p> composer create-project laravel/laravel ./todolist --prefer-dist</p>
+<p>をコンソールに入力し、展開してください。　出来上がったtodolistにgithubに記載したファイル群を上書きで保存して、起動してください。　（cdでホームディレクトリに移動してから作業するとenvironmentディレクトリと同じ階層に出来上がります）</p>
+
+<p>2023/5/20日時点のAWSはphp version 7.2なので変更が必要です。</p>
+
 <p>php version</p>
 <p>PHP 7.4.33 (cli) (built: Nov 19 2022 00:22:13) ( NTS )</p>
 <p>Copyright (c) The PHP Group</p>
@@ -36,9 +42,7 @@
 <p>php artisan migrate</p>
 
 
-<p>・Laravelのcomposerを使って</p>
-<p> composer create-project laravel/laravel ./todolist --prefer-dist</p>
-<p>をコンソールに入力し、展開してください。　出来上がったtodolistにファイル群を上書きで保存して、起動してください。　（cdでホームディレクトリに移動してから作業するとenvironmentディレクトリと同じ階層に出来上がります）</p>
+
 
 <p>・ユーザー登録機能</p>
 <p>・ログイン機能</p>
